@@ -1,10 +1,12 @@
-const Discord = require("discord.js")
+var Discord = require("discord.js")
 const bot = new Discord.Client()
 var file = require('file-system');
 var fs = require('fs');
+const help = require("./class/Help.js")
+const emploi = require("./class/Emploi.js")
 
 
-
+var blank = "\u200B"
 const config = require("./token.json")
 let data = require("./data.json")
 const prefix = config.prefix
@@ -24,7 +26,8 @@ bot.on("message", message => {
     }
 
     if(message.content.startsWith(prefix + "help")){
-        channel.send("demande a maz moi j'ai pas ton temps")
+        help(message)
+
     }
 
     if(message.content.startsWith(prefix + "newlife")){
@@ -43,7 +46,10 @@ bot.on("message", message => {
                 bank: 0,
                 home: "HLM",
                 rent: "50",
-                work: "chômeur"
+                work: "chômeur",
+                organisation: "citoyen",
+                grade: null
+
             }
             fs.writeFileSync("./data.json", JSON.stringify(data))
         }
@@ -64,12 +70,31 @@ bot.on("message", message => {
         .setTitle(':card_index: bureau du notaire')
         .setDescription("status de "+ user.toString())
         .addFields(
-		{ name: ':purse: portefeuille', value: userdata.wallet, inline: true },
-		{ name: ':bank: banque', value: userdata.bank, inline: true },
-        { name: ':house: logement', value: userdata.home, inline: true },
-	)
-    message.channel.send(embed)
+		    { name: ':purse: portefeuille', value: userdata.wallet, inline: true },
+		    { name: ':bank: banque', value: userdata.bank, inline: true },
+            { name: ':house: logement', value: userdata.home, inline: true },
+	    )
+        .addFields(
+            {name: ':money_with_wings: loyer', value:userdata.rent, inline: true},
+            {name: ":necktie: emploi", value: userdata.work, inline: true},
+            {name: ":detective: organisation", value: userdata.organisation, inline: true}
+        )
+
+        message.channel.send(embed)
     }
+
+    if(message.content.startsWith(prefix + "shop")){
+        const user = message.author
+        const id = message.author.id
+        emploi.pauleEmploi(message,id.toString())
+    }
+
+    if(message.content.startsWith(prefix + "careers")){
+        const user = message.author
+        const id = message.author.id
+        emploi.careers(message,id.toString())
+    }
+
     
 } )
 

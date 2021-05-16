@@ -1,9 +1,22 @@
-{"840019136657752105":
-    {
-    "wallet":500,
-    "bank":0,
-    "home":"HLM",
-    "rent":"50",
-    "work": "chômeur"
+{
+    "304350396804235264": {
+        "wallet": 500,
+        "bank": 0,
+        "home": "HLM",
+        "rent": "50",
+        "work": "caissier",
+        "organisation": "citoyen",
+        "grade": [
+            "none"
+        ]
+    },
+    "689385401282068544": {
+        "wallet": 500,
+        "bank": 0,
+        "home": "HLM",
+        "rent": "50",
+        "work": "chômeur",
+        "organisation": "citoyen",
+        "grade": null
     }
 }
