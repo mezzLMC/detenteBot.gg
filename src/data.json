@@ -1,0 +1,50 @@
+{
+ "304350396804235264": {
+  "wallet": 1000,
+  "bank": 0,
+  "home": "HLM",
+  "rent": 50,
+  "work": "chômeur",
+  "organisation": "citoyen",
+  "grade": [
+   "none"
+  ],
+  "claimCount": 0
+ },
+ "680030322070519833": {
+  "wallet": 500,
+  "bank": 0,
+  "home": "HLM",
+  "rent": 50,
+  "work": "chômeur",
+  "organisation": "citoyen",
+  "grade": [
+   "none"
+  ],
+  "claimCount": 0
+ },
+ "689459378658738250": {
+  "wallet": 1000,
+  "bank": 0,
+  "home": "HLM",
+  "rent": 50,
+  "work": "chômeur",
+  "organisation": "citoyen",
+  "grade": [
+   "none"
+  ],
+  "claimCount": 0
+ },
+ "518730249303752704": {
+  "wallet": 500,
+  "bank": 0,
+  "home": "HLM",
+  "rent": 50,
+  "work": "chômeur",
+  "organisation": "citoyen",
+  "grade": [
+   "none"
+  ],
+  "claimCount": 0
+ }
+}

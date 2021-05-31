@@ -1,21 +1,21 @@
-var Discord = require("discord.js")
-const bot = new Discord.Client()
+import { CommandMessage } from "@typeit/discord";
+import {MessageEmbed} from "discord.js"
 var file = require('file-system');
 var fs = require('fs');
 
 
 var blank = "\u200B"
-const config = require("../token.json")
+const config = require("../config.json")
 let data = require("../data.json")
 const prefix = config.prefix
 
 
-module.exports = function(message){
+export function Status(message: CommandMessage){
         const user = message.author
         const id = message.author.id
         const userdata = data[id]
         if(userdata){
-            const embed = new Discord.MessageEmbed()
+            const embed = new MessageEmbed()
             .setTitle(':card_index: bureau du notaire')
             .setDescription("status de "+ user.toString())
             .addFields(
@@ -31,7 +31,7 @@ module.exports = function(message){
             message.channel.send(embed)
         }
         else{
-            const embed = new Discord.MessageEmbed()
+            const embed = new MessageEmbed()
             .setTitle(':no_entry: action impossible' )
             .setColor(0xff0000)
             .setDescription(user.toString()+ " t'es qui? | `"+ prefix+ "newlife` pour rejoindre la game")

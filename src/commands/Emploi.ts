@@ -1,23 +1,12 @@
+import {Player} from '../class/Player'
+import {CommandMessage} from "@typeit/discord"
 var Discord = require("discord.js")
 var file = require('file-system');
 var fs = require('fs');
 
-const config = require("../token.json")
+const config = require("../config.json")
 var blank = "\u200B"
 let data = require("../data.json")
-
-function getAvailableWorks(id){
-    let availableWorks = [];
-    userGrade = data[id].grade
-    userGrade.forEach(grade => {
-        config.works.forEach(work=>{
-            if(work.grade == grade){
-                availableWorks.push(work)
-            }
-        })
-    });
-    return availableWorks;
-}
 
 function getWork(work){
     let result = undefined
@@ -29,8 +18,10 @@ function getWork(work){
     return result
 }
 
-function pauleEmploi(message,id){
-    dispoworks = getAvailableWorks(id).map(value=>{
+
+function pauleEmploi(message: CommandMessage){
+    var sender = new Player(message.author.id)
+    var dispoworks = sender.getAvailableWorks().map(value=>{
         return {
             name: value.name, value: "`" + config.prefix + "careers " + value.cmd +"` | **salaire:** `"+ value.income + "` :coin: " 
         }
@@ -43,16 +34,17 @@ function pauleEmploi(message,id){
     message.channel.send(embed)
 };
 
-function careers(message,id){
-    userGrade = data[id].grade
-    trigger = message.content.split(" ")[1]
+function careers(message: CommandMessage){
+    var sender = new Player(message.author.id)
+    var trigger = message.args.work
+    console.log("cc")
     if(getWork(trigger)){
-        if(userGrade.includes(getWork(trigger).grade)){
-            data[id].work = getWork(trigger).name
-            fs.writeFileSync("./data.json", JSON.stringify(data))
+        if(sender.getAttribute("grade").includes(getWork(trigger).grade)){
+            sender.setWork(getWork(trigger).name)
             const embed = new Discord.MessageEmbed()
             .setTitle(':necktie: Paule-emploi' )
             .setDescription(message.author.toString() + " tu es désormais "+ getWork(trigger).name +"!")
+            message.channel.send(embed)
         }
         else{
             const embed = new Discord.MessageEmbed()
@@ -72,9 +64,7 @@ function careers(message,id){
     }
 }
 
-
-module.exports = {
-    pauleEmploi: pauleEmploi,
-    careers: careers
+export{
+    pauleEmploi,
+    careers
 }
-

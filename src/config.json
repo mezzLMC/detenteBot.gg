@@ -2,7 +2,7 @@
     "token": "ODMyMDUyODY3NjIzMjg4ODUy.YHeLng.Z0Uw5MWdN8llPHyC0zcr9yJ1W9c",
     "prefix": "%",
     "minimum": 500,
-    "works":[
+    "works": [
         {
             "name": "caissier",
             "income": 100,
@@ -14,7 +14,6 @@
             "income": 100,
             "grade": "none",
             "cmd": "pecheur"
-
         },
         {
             "name": "femme de ménage",
@@ -27,6 +26,12 @@
             "income": 100,
             "grade": "none",
             "cmd": "concierge"
-        } 
+        },
+        {
+            "name": "chômeur",
+            "income": 20,
+            "grade": "none",
+            "cmd": "chomeur"
+        }
     ]
 }

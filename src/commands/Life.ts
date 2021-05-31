@@ -2,11 +2,9 @@ var Discord = require("discord.js")
 const bot = new Discord.Client()
 var file = require('file-system');
 var fs = require('fs');
+var data = require("../data.json")
 
-
-
-
-module.exports = function(message){
+export function NewLife(message){
         const user = message.author
         const id = message.author.id
         if(!data[id]){
@@ -21,13 +19,14 @@ module.exports = function(message){
                 wallet: 500,
                 bank: 0,
                 home: "HLM",
-                rent: "50",
+                rent: 50,
                 work: "chômeur",
                 organisation: "citoyen",
-                grade: ["none"]
+                grade: ["none"],
+                "claimCount": 0
 
             }
-            fs.writeFileSync("./data.json", JSON.stringify(data))
+            fs.writeFileSync("../data.json", JSON.stringify(data))
         }
         else{
             const embed = new Discord.MessageEmbed()
