@@ -1,479 +1,256 @@
 {
  "betData": [
   {
-   "name": " je dors jamais",
-   "s1": " oui ",
-   "s2": " non",
-   "bettors": {
-    "s1": [
-     {
-      "user": "304350396804235264",
-      "amount": 500
-     },
-     {
-      "user": "304350396804235264",
-      "amount": 500
-     },
-     {
-      "user": "304350396804235264",
-      "amount": 500
-     }
-    ],
-    "s2": [
-     {
-      "user": "304350396804235264",
-      "amount": 500
-     },
-     {
-      "user": "304350396804235264",
-      "amount": 500
-     },
-     {
-      "user": "304350396804235264",
-      "amount": 500
-     },
-     {
-      "user": "304350396804235264",
-      "amount": 500
-     },
-     {
-      "user": "304350396804235264",
-      "amount": 500
-     },
-     {
-      "user": "304350396804235264",
-      "amount": 500
-     },
-     {
-      "user": "304350396804235264",
-      "amount": 500
-     },
-     {
-      "user": "304350396804235264",
-      "amount": 500
-     },
-     {
-      "user": "304350396804235264",
-      "amount": 500
-     },
-     {
-      "user": "304350396804235264",
-      "amount": 500
-     },
-     {
-      "user": "304350396804235264",
-      "amount": 500
-     },
-     {
-      "user": "304350396804235264",
-      "amount": 500
-     }
-    ]
-   }
-  },
-  {
-   "name": " je dors jamais",
-   "s1": " oui ",
-   "s2": " non",
-   "bettors": {
-    "s1": [],
-    "s2": []
-   }
-  },
-  {
-   "name": " je dors jamais",
-   "s1": " oui ",
-   "s2": " non",
-   "bettors": {
-    "s1": [],
-    "s2": []
-   }
-  },
-  {
-   "name": " je dors jamais",
-   "s1": " oui ",
-   "s2": " non",
-   "bettors": {
-    "s1": [],
-    "s2": []
-   }
-  },
-  {
-   "name": " je dors jamais",
-   "s1": " oui ",
-   "s2": " non",
-   "bettors": {
-    "s1": [],
-    "s2": []
-   }
-  },
-  {
-   "name": " je dors jamais",
-   "s1": " oui ",
-   "s2": " non",
-   "bettors": {
-    "s1": [],
-    "s2": []
-   }
-  },
-  {
-   "name": " je dors jamais",
-   "s1": " oui ",
-   "s2": " non",
-   "bettors": {
-    "s1": [],
-    "s2": []
-   }
-  },
-  {
-   "name": " je dors jamais",
-   "s1": " oui ",
-   "s2": " non",
-   "bettors": {
-    "s1": [],
-    "s2": []
-   }
-  },
-  {
-   "name": " je dors jamais",
-   "s1": " oui ",
-   "s2": " non",
-   "bettors": {
-    "s1": [],
-    "s2": []
-   }
-  },
-  {
-   "name": " je dors jamais",
-   "s1": " oui ",
-   "s2": " non",
-   "bettors": {
-    "s1": [],
-    "s2": []
-   }
-  },
-  {
-   "name": " je dors jamais",
-   "s1": " oui ",
-   "s2": " non",
-   "bettors": {
-    "s1": [],
-    "s2": []
-   }
-  },
-  {
-   "name": " je dors jamais",
-   "s1": " oui ",
-   "s2": " non",
-   "bettors": {
-    "s1": [],
-    "s2": []
-   }
-  },
-  {
-   "name": " je dors jamais",
-   "s1": " oui ",
-   "s2": " non",
-   "bettors": {
-    "s1": [],
-    "s2": []
-   }
-  },
-  {
-   "name": " je dors jamais",
-   "s1": " oui ",
-   "s2": " non",
-   "bettors": {
-    "s1": [],
-    "s2": []
-   }
-  },
-  {
-   "name": " je dors jamais",
-   "s1": " oui ",
-   "s2": " non",
-   "bettors": {
-    "s1": [],
-    "s2": []
-   }
-  },
-  {
-   "name": " je dors jamais",
-   "s1": " oui ",
-   "s2": " non",
-   "bettors": {
-    "s1": [],
-    "s2": []
-   }
-  },
-  {
-   "name": " je dors jamais",
-   "s1": " oui ",
-   "s2": " non",
-   "bettors": {
-    "s1": [],
-    "s2": []
-   }
-  },
-  {
-   "name": " je dors jamais",
-   "s1": " oui ",
-   "s2": " non",
-   "bettors": {
-    "s1": [],
-    "s2": []
-   }
-  },
-  {
-   "name": " je dors jamais",
-   "s1": " oui ",
-   "s2": " non",
-   "bettors": {
-    "s1": [],
-    "s2": []
-   }
-  },
-  {
-   "name": " je dors jamais",
-   "s1": " oui ",
-   "s2": " non",
-   "bettors": {
-    "s1": [],
-    "s2": []
-   }
-  },
-  {
-   "name": " je dors jamais",
-   "s1": " oui ",
-   "s2": " non",
-   "bettors": {
-    "s1": [],
-    "s2": []
-   }
-  },
-  {
-   "name": "je bois",
-   "s1": " un café ",
-   "s2": " du jus",
-   "bettors": {
-    "s1": [],
-    "s2": []
-   }
-  },
-  {
-   "name": "je bois",
-   "s1": " un café ",
-   "s2": " du jus",
-   "bettors": {
-    "s1": [],
-    "s2": []
-   }
-  },
-  {
-   "name": "je bois",
-   "s1": " un café ",
-   "s2": " du jus",
-   "bettors": {
-    "s1": [],
-    "s2": []
-   }
-  },
-  {
-   "name": "je bois",
-   "s1": " un café ",
-   "s2": " du jus",
-   "bettors": {
-    "s1": [],
-    "s2": []
-   }
-  },
-  {
-   "name": "je bois",
-   "s1": " un café ",
-   "s2": " du jus",
-   "bettors": {
-    "s1": [],
-    "s2": []
-   }
-  },
-  {
-   "name": "je bois",
-   "s1": " un café ",
-   "s2": " du jus",
-   "bettors": {
-    "s1": [],
-    "s2": []
-   }
-  },
-  {
-   "name": "je bois",
-   "s1": " un café ",
-   "s2": " du jus",
-   "bettors": {
-    "s1": [],
-    "s2": []
-   }
-  },
-  {
-   "name": "je bois",
-   "s1": " un café ",
-   "s2": " du jus",
-   "bettors": {
-    "s1": [],
-    "s2": []
-   }
-  },
-  {
-   "name": "je bois",
-   "s1": " un café ",
-   "s2": " du jus",
-   "bettors": {
-    "s1": [],
-    "s2": []
-   }
-  },
-  {
-   "name": "je bois",
-   "s1": " un café ",
-   "s2": " du jus",
-   "bettors": {
-    "s1": [],
-    "s2": []
-   }
-  },
-  {
-   "name": "je bois",
-   "s1": " un café ",
-   "s2": " du jus",
-   "bettors": {
-    "s1": [],
-    "s2": []
-   }
-  },
-  {
-   "name": "je bois",
-   "s1": " un café ",
-   "s2": " du jus",
-   "bettors": {
-    "s1": [],
-    "s2": []
-   }
-  },
-  {
-   "name": "je bois",
-   "s1": " un café ",
-   "s2": " du jus",
-   "bettors": {
-    "s1": [],
-    "s2": []
-   }
-  },
-  {
-   "name": "je bois",
-   "s1": " un café ",
-   "s2": " du jus",
-   "bettors": {
-    "s1": [],
-    "s2": []
-   }
-  },
-  {
-   "name": "je bois",
-   "s1": " un café ",
-   "s2": " du jus",
-   "bettors": {
-    "s1": [],
-    "s2": []
-   }
-  },
-  {
-   "name": "je bois",
-   "s1": " un café ",
-   "s2": " du jus",
-   "bettors": {
-    "s1": [],
-    "s2": []
-   }
-  },
-  {
-   "name": "je bois",
-   "s1": " un café ",
-   "s2": " du jus",
-   "bettors": {
-    "s1": [],
-    "s2": []
-   }
-  },
-  {
-   "name": "je bois",
-   "s1": " un café ",
-   "s2": " du jus",
-   "bettors": {
-    "s1": [],
-    "s2": []
-   }
-  },
-  {
-   "name": "je bois",
-   "s1": " un café ",
-   "s2": " du jus",
-   "bettors": {
-    "s1": [],
-    "s2": []
-   }
-  },
-  {
-   "name": "je bois",
-   "s1": " un café ",
-   "s2": " du jus",
-   "bettors": {
-    "s1": [],
-    "s2": []
-   }
-  },
-  {
-   "name": "je bois",
-   "s1": " un café ",
-   "s2": " du jus",
-   "bettors": {
-    "s1": [],
-    "s2": []
-   }
-  },
-  {
-   "name": "je bois",
-   "s1": " un café ",
-   "s2": " du jus",
-   "bettors": {
-    "s1": [],
-    "s2": []
-   }
-  },
-  {
-   "name": "je bois",
-   "s1": " un café ",
-   "s2": " du jus",
-   "bettors": {
-    "s1": [],
-    "s2": []
-   }
+   "name": "pole gagne sa game dota",
+   "s1": " oui bg ",
+   "s2": " non il est nul",
+   "bettors": []
   },
   {
    "name": "pole gagne sa game dota",
    "s1": " oui bg ",
    "s2": " non il est nul",
-   "bettors": {
-    "s1": [],
-    "s2": []
-   }
+   "bettors": {}
   },
   {
    "name": "pole gagne sa game dota",
-   "s1": " oui c un bg ",
+   "s1": " oui bg ",
    "s2": " non il est nul",
+   "bettors": {}
+  },
+  {
+   "name": "pole gagne sa game dota",
+   "s1": " oui bg ",
+   "s2": " non il est nul",
+   "bettors": {}
+  },
+  {
+   "name": "pole gagne sa game dota",
+   "s1": " oui bg ",
+   "s2": " non il est nul",
+   "bettors": {}
+  },
+  {
+   "name": "pole gagne sa game dota",
+   "s1": " oui bg ",
+   "s2": " non il est nul",
+   "bettors": {}
+  },
+  {
+   "name": "pole gagne sa game dota",
+   "s1": " oui bg ",
+   "s2": " non il est nul",
+   "bettors": {}
+  },
+  {
+   "name": "pole gagne sa game dota",
+   "s1": " oui bg ",
+   "s2": " non il est nul",
+   "bettors": {}
+  },
+  {
+   "name": "pole gagne sa game dota",
+   "s1": " oui bg ",
+   "s2": " non il est nul",
+   "bettors": {}
+  },
+  {
+   "name": "pole gagne sa game dota",
+   "s1": " oui bg ",
+   "s2": " non il est nul",
+   "bettors": {}
+  },
+  {
+   "name": "pole gagne sa game dota",
+   "s1": " oui bg ",
+   "s2": " non il est nul",
+   "bettors": {}
+  },
+  {
+   "name": "pole gagne sa game dota",
+   "s1": " oui bg ",
+   "s2": " non il est nul",
+   "bettors": {}
+  },
+  {
+   "name": "pole gagne sa game dota",
+   "s1": " oui bg ",
+   "s2": " non il est nul",
+   "bettors": {}
+  },
+  {
+   "name": "pole gagne sa game dota",
+   "s1": " oui bg ",
+   "s2": " non il est nul",
+   "bettors": {}
+  },
+  {
+   "name": "pole gagne sa game dota",
+   "s1": " oui bg ",
+   "s2": " non il est nul",
+   "bettors": {}
+  },
+  {
+   "name": "pole gagne sa game dota",
+   "s1": " oui bg ",
+   "s2": " non il est nul",
+   "bettors": {}
+  },
+  {
+   "name": "pole gagne sa game dota",
+   "s1": " oui bg ",
+   "s2": " non il est nul",
+   "bettors": {}
+  },
+  {
+   "name": "pole gagne sa game dota",
+   "s1": " oui bg ",
+   "s2": " non il est nul",
+   "bettors": {}
+  },
+  {
+   "name": "pole gagne sa game dota",
+   "s1": " oui bg ",
+   "s2": " non il est nul",
+   "bettors": {}
+  },
+  {
+   "name": "pole gagne sa game dota",
+   "s1": " oui bg ",
+   "s2": " non il est nul",
+   "bettors": {}
+  },
+  {
+   "name": "pole gagne sa game dota",
+   "s1": " oui bg ",
+   "s2": " non il est nul",
+   "bettors": {}
+  },
+  {
+   "name": "pole gagne sa game dota",
+   "s1": " oui bg ",
+   "s2": " non il est nul",
+   "bettors": {}
+  },
+  {
+   "name": "pole gagne sa game dota",
+   "s1": " oui bg ",
+   "s2": " non il est nul",
+   "bettors": {}
+  },
+  {
+   "name": "pole gagne sa game dota",
+   "s1": " oui bg ",
+   "s2": " non il est nul",
+   "bettors": {}
+  },
+  {
+   "name": "pole gagne sa game dota",
+   "s1": " oui bg ",
+   "s2": " non il est nul",
+   "bettors": {}
+  },
+  {
+   "name": "pole gagne sa game dota",
+   "s1": " oui bg ",
+   "s2": " non il est nul",
+   "bettors": {}
+  },
+  {
+   "name": "test",
+   "s1": " hori clique ici ",
+   "s2": " mazouz clique ici",
    "bettors": {
-    "s1": [],
-    "s2": []
+    "689460023730241666": {
+     "solution": " hori clique ici "
+    }
+   }
+  },
+  {
+   "name": "test",
+   "s1": " hori clique ici ",
+   "s2": " mazouz clique ici",
+   "bettors": {
+    "304350396804235264": {
+     "amount": "10",
+     "solution": " mazouz clique ici"
+    },
+    "689460023730241666": {
+     "solution": " hori clique ici ",
+     "amount": "1000"
+    }
+   }
+  },
+  {
+   "name": "test",
+   "s1": " hori clique ici ",
+   "s2": " mazouz clique ici",
+   "bettors": {
+    "304350396804235264": {
+     "solution": " hori clique ici ",
+     "amount": "10"
+    }
+   }
+  },
+  {
+   "name": "test",
+   "s1": " hori clique ici ",
+   "s2": " mazouz clique ici",
+   "bettors": {}
+  },
+  {
+   "name": "test",
+   "s1": " hori clique ici ",
+   "s2": " mazouz clique ici",
+   "bettors": {
+    "304350396804235264": {
+     "solution": " mazouz clique ici"
+    }
+   }
+  },
+  {
+   "name": "test",
+   "s1": " hori clique ici ",
+   "s2": " mazouz clique ici",
+   "bettors": {
+    "304350396804235264": {
+     "solution": " hori clique ici "
+    }
+   }
+  },
+  {
+   "name": "test",
+   "s1": " hori clique ici ",
+   "s2": " mazouz clique ici",
+   "bettors": {
+    "304350396804235264": {
+     "solution": " hori clique ici "
+    }
+   }
+  },
+  {
+   "name": "test",
+   "s1": " hori clique ici ",
+   "s2": " mazouz clique ici",
+   "bettors": {
+    "304350396804235264": {
+     "solution": " hori clique ici "
+    }
+   }
+  },
+  {
+   "name": "test",
+   "s1": " nour clique ici ",
+   "s2": " mazouz clique ici",
+   "bettors": {
+    "689385401282068544": {
+     "solution": " nour clique ici ",
+     "amount": "10000"
+    },
+    "304350396804235264": {
+     "solution": " mazouz clique ici",
+     "amount": "10"
+    }
    }
   }
  ]

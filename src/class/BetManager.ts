@@ -23,7 +23,7 @@ export function createBet(message: CommandMessage){
 
 }
 
-export class Bet{
+export class Bet{     
   timer: number;
   name: string;
   s1: string;
@@ -51,7 +51,7 @@ export class Bet{
     return new disbut.MessageButton()
     .setStyle('blurple') //default: blurple
     .setLabel(amount) //default: NO_LABEL_PROVIDED
-    .setID(this.id + ":" + amount) 
+    .setID("amount:" + this.id + ":" + amount) 
   }
   
 
@@ -69,8 +69,6 @@ export class Bet{
       s1: this.s1,
       s2: this.s2,
       bettors: {
-        s1: [],
-        s2: [],
       }
     })
 
@@ -80,7 +78,6 @@ export class Bet{
   }
 
     sendMessage(){
-        console.log("cc")
         let embed = new MessageEmbed()
         .setTitle(":game_die: paris: " + this.name + "?")
         .setDescription(
@@ -93,15 +90,26 @@ export class Bet{
       let betS1 = new disbut.MessageButton()
       .setStyle('red') //default: blurple
       .setLabel(this.s1) //default: NO_LABEL_PROVIDED
-      .setID(this.id + ":" + this.s1) //note: if you use the style "url" you must provide url using .setURL('https://example.com')
+      .setID( "solution:" +this.id + ":" + this.s1) //note: if you use the style "url" you must provide url using .setURL('https://example.com')
        
       let betS2 = new disbut.MessageButton()
       .setStyle('green') //default: blurple
       .setLabel(this.s2) //default: NO_LABEL_PROVIDED
-      .setID(this.id + ":" + this.s2) //note: if you use the style "url" you must provide url using .setURL('https://example.com')
+      .setID( "solution:" +this.id + ":" + this.s2) //note: if you use the style "url" you must provide url using .setURL('https://example.com')
 
       client.on('clickButton', async (button) => {
-          console.log(button.id)
+          let futureData = this.getDatas()
+          let props = button.id.split(":")
+          let type = props[0]
+          let betId = props[1].replace("bet","")
+          let value = props[2]
+          if(futureData.betData[betId].bettors[button.clicker.user.id] == undefined){
+            futureData.betData[betId].bettors[button.clicker.user.id] = {};
+          }
+          futureData.betData[betId].bettors[button.clicker.user.id][type] = value
+          // 2 types filled? => real response
+          fs.writeFileSync("./src/bet.json", JSON.stringify(futureData,null,1))
+          new Bet(props[1]).getOdds()
           await button.reply.send(`${button.clicker.user.toString()} à choisi ${button.id.split(":")[1]}` ).then(() => {
             setTimeout(() => button.reply.delete(), 900)
           })
@@ -128,8 +136,18 @@ export class Bet{
       }
 
     getOdds(){
-      var lenght1 = this.getDatas().betData[this.numid].bettors.s1.length
-      var lenght2 = this.getDatas().betData[this.numid].bettors.s2.length
+       let betData = this.getDatas().betData[this.numid].bettors
+       let s1 = this.getDatas().betData[this.numid].s1
+       let s2 = this.getDatas().betData[this.numid].s2
+       var lenght1 = Object.keys(betData).filter(userid => betData[userid].solution == s1).length
+       var lenght2 = Object.keys(betData).filter(function(userid) {
+       return betData[userid].solution == s2
+       }).length
+       
+       console.log(lenght1)
+       console.log(lenght2)
+       //
+      /*var lenght2 = Object.keys(this.getDatas().betData[this.numid].bettors).filter(userid => this.getDatas().betData[this.numid].bettors[userid].solution == this.s2).length
       var proba1 = lenght1/(lenght1+lenght2)
       var proba2 = lenght2/(lenght1+lenght2)
       var odd1 = 1/proba1
@@ -137,15 +155,15 @@ export class Bet{
       return {
         s1: odd1,
         s2: odd2,
-      }
+      } */
     }
 
-    addBetter(id: string,amount: string,target: "s1" | "s2"){
+    addBetter(userid: string,amount = 0,target = ""){
       var newData = this.getDatas()
-      newData.betData[this.numid].bettors[target].push({
-        user: id,
-        amount: Number(amount)
-      })
+      newData.betData[this.numid].bettors[userid] = {
+        amount: Number(amount),
+        solution: target
+      }
       fs.writeFileSync("./src/bet.json", JSON.stringify(newData,null,1))
     }
 
