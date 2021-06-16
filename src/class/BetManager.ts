@@ -20,7 +20,7 @@ client.on('clickButton', async (button) => {
 
 
 export function createBet(message: CommandMessage){
-
+  
 }
 
 export class Bet{     
@@ -71,7 +71,6 @@ export class Bet{
       bettors: {
       }
     })
-
     fs.writeFileSync("./src/bet.json", JSON.stringify(newDatas,null,1))
     this.sendMessage()
     return(new Bet(this.id))

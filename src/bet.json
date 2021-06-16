@@ -252,6 +252,17 @@
      "amount": "10"
     }
    }
+  },
+  {
+   "name": "test",
+   "s1": " nour clique ici ",
+   "s2": " mazouz clique ici",
+   "bettors": {
+    "304350396804235264": {
+     "solution": " nour clique ici ",
+     "amount": "10"
+    }
+   }
   }
  ]
 }
