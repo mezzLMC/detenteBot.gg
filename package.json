@@ -19,7 +19,7 @@
   "dependencies": {
     "@babel/preset-env": "^7.14.2",
     "@typeit/discord": "^4.0.9",
-    "canvas": "^2.7.0",
+    "canvas": "^2.8.0",
     "discord-buttons": "^2.4.1",
     "discord.js": "^12.5.3",
     "express": "^4.17.1"

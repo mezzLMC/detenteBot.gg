@@ -1,4 +1,4 @@
-import {Client, Discord } from "@typeit/discord";
+import {Client, Discord } from "@typeit/discord"
 var blank = "\u200B"
 var file = require('file-system');
 var fs = require('fs');
