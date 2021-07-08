@@ -28,11 +28,10 @@ export interface BetData {
             s1: string,
             s2: string
             bettors: {
-                s1: Array<any>
-                s2: Array<{
-                    user?: string,
-                    amount?: number,
-                }>
+                [userid: string]: {
+                    solution?: string,
+                    amount?: number
+                }
             }
         }
     ]
